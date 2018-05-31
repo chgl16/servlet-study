@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>servletDemo1</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<h2>Hello World!</h2>
+<a  href="/servlet/MyServlet1">MyServlet1</a>
+<hr />
+<!-- 测试表单post请求, servlet通过request.getParameter("introduction");获取输入数据 -->
+<form action="servlet/MyServlet1" method="post">
+    <table id="mytable">
+        <tr>
+            <td>输入自我介绍：</td>
+            <td><input type="text" name="introduction" id="intro" /></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="提交" name="submit" />
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
